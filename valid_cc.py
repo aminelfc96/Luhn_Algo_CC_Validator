@@ -16,6 +16,6 @@ def Validator(card):
     second_part = sum(even_num_2)
     total = first_part + second_part
     if total % 10 == 0:
-        print(f'{card} is valid')
+        return card
     else:
-        print('not valid')
+        return False
